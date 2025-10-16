@@ -1,0 +1,13 @@
+.hero {
+  background-color: #f8f9fa;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 600;
+}
