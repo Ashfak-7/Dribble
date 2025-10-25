@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:16/10/2025
+## Date:25/10/2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -27,118 +27,151 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dribbble Clone</title>
- 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  </link>
-<link rel="stylesheet" href="style.css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>dribble</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dribbble Clone</a>
+      <b><a class="navbar-brand" href="dribble.html">Dribble</a></b>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero text-center py-5">
+  <header class="text-white text-center py-5">
     <div class="container">
-      <h1>Discover Creative Work</h1>
-      <p class="lead">Explore the best design shots from around the world</p>
-      <button class="btn btn-primary" onclick="showAlert()">Get Started</button>
+      <h1>Discover the New</h1>
+      <p class="lead">Explore our Best and Quality Clothes</p>
     </div>
-  </section>
+  </header>
 
-  <!-- Featured Shots -->
-  <section class="shots py-5 bg-light">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            
-            <img src="s1.jpg" class="card-img-top" alt="Shot 1" />
-            <div class="card-body">
-              <h5 class="card-title">Design Title 1</h5>
-            </div>
+  <!-- Features Section -->
+  <section class="container">
+    <div class="row text-center">
+      <!-- Feature Cards -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="shirt1.jpg">
+          </div>
+        
+        </div>
+        <b>Shirt</b>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="pant1.jpg">
           </div>
         </div>
-        <!-- Repeat for more cards -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="s2.jpg" class="card-img-top" alt="Shot 2" />
-            <div class="card-body">
-              <h5 class="card-title">Design Title 2</h5>
-            </div>
+        <b>Pant</b>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+             <img src="tshirt.jpg">
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="s3.jpg" class="card-img-top" alt="Shot 3" />
-            <div class="card-body">
-              <h5 class="card-title">Design Title 3</h5>
-            </div>
+        <b>T-Shirt</b>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="coat.jpg">
           </div>
         </div>
+        <b>Coat</b>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="shoe.jpg">
+          </div>
+        </div>
+        <b>Shoe</b>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="shorts.jpg">
+          </div>
+        </div>
+        <b>Shorts</b>
       </div>
     </div>
   </section>
 
-  
-  <footer class="bg-dark text-white text-center py-3">
-    <p>created by ASHFAK N(25003270).</p>
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <div class="container">
+      <p class="mb-0">Designed by ASHFAK N(25003270)</p>
+    </div>
   </footer>
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
-.hero {
-  background-color: #f8f9fa;
-}
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-.card-title {
-  text-align: center;
-  font-weight: 600;
-}
+    header {
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+    }
 
-
-
-function showAlert() {
-  alert("Welcome to the Dribbble Clone!");
-}
-
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-body{
+      
+      height:10px;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .col-md-4{
+      height: 240px;
+    }
+    footer {
+      
+      background-color: #343a40;
+      color: #fff;
+    }
 
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot (42).png>)
+<img width="1920" height="1200" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/7887af58-b4cd-409a-a38b-053be71e6431" />
+
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
