@@ -29,17 +29,14 @@ Publish the website in the LocalHost.
 ```
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>dribble</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <b><a class="navbar-brand" href="dribble.html">Dribble</a></b>
@@ -56,19 +53,15 @@ Publish the website in the LocalHost.
       </div>
     </div>
   </nav>
-
-  <!-- Hero Section -->
   <header class="text-white text-center py-5">
     <div class="container">
       <h1>Discover the New</h1>
       <p class="lead">Explore our Best and Quality Clothes</p>
     </div>
   </header>
-
-  <!-- Features Section -->
   <section class="container">
     <div class="row text-center">
-      <!-- Feature Cards -->
+     
       <div class="col-md-4 mb-4">
         <div class="card h-100">
           <div class="card-body">
@@ -120,57 +113,60 @@ Publish the website in the LocalHost.
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
   <footer class="text-center py-3">
     <div class="container">
       <p class="mb-0">Designed by ASHFAK N(25003270)</p>
     </div>
   </footer>
-
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
-body {
+body
+{
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
-    }
-
-    .navbar {
+}
+.navbar
+ {
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+}
 
-    header {
+header
+{
       background: linear-gradient(90deg, #007bff, #00c6ff);
-    }
+}
 
-    .card {
+.card
+{
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card-body{
+}
+.card-body
+{
       
       height:10px;
-    }
+}
     
-    .card:hover {
+.card:hover
+{
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
-    .col-md-4{
+}
+.col-md-4
+{
       height: 240px;
-    }
-    footer {
-      
+}
+footer
+{  
       background-color: #343a40;
       color: #fff;
-    }
+}
 
 ```
 
 ## OUTPUT:
-<img width="1920" height="1200" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/7887af58-b4cd-409a-a38b-053be71e6431" />
+<img width="1920" height="1200" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/f105d464-86c7-45a9-b9c0-26cf49c17acd" />
+
 
 
 ## RESULT:
